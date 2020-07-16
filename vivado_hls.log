@@ -1,0 +1,164 @@
+INFO: [HLS 200-10] Running '/data/tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'piyush' on host 'uwlogin.cern.ch' (Linux_x86_64 version 3.10.0-957.12.2.el7.x86_64) on Thu Jul 16 04:53:28 EDT 2020
+INFO: [HLS 200-10] On os "CentOS Linux release 7.8.2003 (Core) "
+INFO: [HLS 200-10] In directory '/afs/cern.ch/user/p/piyush/work/towerMerge'
+Sourcing Tcl script '/afs/cern.ch/user/p/piyush/work/towerMerge/towerMerge/solution1/csynth.tcl'
+INFO: [HLS 200-10] Opening project '/afs/cern.ch/user/p/piyush/work/towerMerge/towerMerge'.
+INFO: [HLS 200-10] Adding design file 'towerMerge_top.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'towerMerge.cpp' to the project
+INFO: [HLS 200-10] Opening solution '/afs/cern.ch/user/p/piyush/work/towerMerge/towerMerge/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4.167ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgc2104-1-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'towerMerge.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'towerMerge_top.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 7506 ; free virtual = 66690
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 7506 ; free virtual = 66690
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'processInputData' into 'towerMerge_top' (towerMerge_top.cpp:66).
+INFO: [XFORM 203-603] Inlining function 'processOutputData' into 'towerMerge_top' (towerMerge_top.cpp:100).
+INFO: [XFORM 203-603] Inlining function 'processOutputData' into 'towerMerge_top' (towerMerge_top.cpp:97).
+INFO: [XFORM 203-603] Inlining function 'processOutputData' into 'towerMerge_top' (towerMerge_top.cpp:88).
+INFO: [XFORM 203-603] Inlining function 'processOutputData' into 'towerMerge_top' (towerMerge_top.cpp:79).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 7495 ; free virtual = 66681
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'Tower::peak_phi' into 'stitchNeighbors' (towerMerge.cpp:8) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::peak_eta' into 'stitchNeighbors' (towerMerge.cpp:8) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::cluster_et' into 'stitchNeighbors' (towerMerge.cpp:11) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::tower_et' into 'stitchNeighbors' (towerMerge.cpp:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::peak_time' into 'stitchNeighbors' (towerMerge.cpp:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::hOe' into 'stitchNeighbors' (towerMerge.cpp:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::operator unsigned int' into 'towerMerge_top' (towerMerge_top.cpp:85) automatically.
+WARNING: [SYNCHK 200-23] ./towerMerge.h:71: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 7486 ; free virtual = 66674
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'towerMerge_top' (towerMerge_top.cpp:56).
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (towerMerge_top.cpp:61) in function 'towerMerge_top' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (./towerMerge.h:65) in function 'towerMerge_top' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'makeTowerloop' (towerMerge_top.cpp:64) in function 'towerMerge_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (./towerMerge.h:67) in function 'towerMerge_top' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.2' (./towerMerge.h:69) in function 'towerMerge_top' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.3' (./towerMerge.h:59) in function 'towerMerge_top' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (towerMerge_top.cpp:69) in function 'towerMerge_top' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1' (./towerMerge.h:65) in function 'towerMerge_top' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'link1OutputLoop' (towerMerge_top.cpp:82) in function 'towerMerge_top' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'link2OutputLoop' (towerMerge_top.cpp:91) in function 'towerMerge_top' completely with a factor of 17.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'link_in.V.data.V' (towerMerge_top.cpp:56) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'link_in.V.user.V' (towerMerge_top.cpp:56) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'link_in.V.last.V' (towerMerge_top.cpp:56) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'link_out.V.data.V' (towerMerge_top.cpp:56) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'link_out.V.user.V' (towerMerge_top.cpp:56) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'link_out.V.last.V' (towerMerge_top.cpp:56) .
+INFO: [XFORM 203-101] Partitioning array 'towersx.tower.data.V' (towerMerge_top.cpp:61) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'this.assign'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'towersy.tower.data.V' (towerMerge_top.cpp:69) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'link_in.V.data.V' (towerMerge_top.cpp:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'link_in.V.user.V' (towerMerge_top.cpp:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'link_in.V.last.V' (towerMerge_top.cpp:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'link_out.V.data.V' (towerMerge_top.cpp:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'link_out.V.user.V' (towerMerge_top.cpp:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'link_out.V.last.V' (towerMerge_top.cpp:56) in dimension 1 completely.
+INFO: [XFORM 203-102] Partitioning array 'towersx.tower.data.V.0' (towerMerge_top.cpp:61) automatically.
+INFO: [XFORM 203-102] Partitioning array 'towersx.tower.data.V.1' (towerMerge_top.cpp:61) automatically.
+INFO: [XFORM 203-102] Partitioning array 'towersy.tower.data.V.0' (towerMerge_top.cpp:69) automatically.
+INFO: [XFORM 203-102] Partitioning array 'towersy.tower.data.V.1' (towerMerge_top.cpp:69) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::peak_phi' into 'stitchNeighbors' (towerMerge.cpp:8) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::peak_eta' into 'stitchNeighbors' (towerMerge.cpp:8) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::cluster_et' into 'stitchNeighbors' (towerMerge.cpp:11) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::tower_et' into 'stitchNeighbors' (towerMerge.cpp:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::peak_time' into 'stitchNeighbors' (towerMerge.cpp:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::hOe' into 'stitchNeighbors' (towerMerge.cpp:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::operator unsigned int' into 'towerMerge_top' (towerMerge_top.cpp:85) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (towerMerge.cpp:5:1) to (towerMerge.cpp:37:1) in function 'stitchNeighbors'... converting 13 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'stitchNeighbors' (towerMerge.cpp:5:1)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 7459 ; free virtual = 66648
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:35 ; elapsed = 00:00:45 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 7448 ; free virtual = 66637
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'towerMerge_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stitchNeighbors' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'stitchNeighbors'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 45.31 seconds; current allocated memory: 142.175 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 142.398 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stitchInPhi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'stitchInPhi'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.5 seconds; current allocated memory: 142.760 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.66 seconds; current allocated memory: 143.227 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'towerMerge_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'towerMerge_top'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.16 seconds; current allocated memory: 143.921 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.6 seconds; current allocated memory: 144.534 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stitchNeighbors' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stitchNeighbors'.
+INFO: [HLS 200-111]  Elapsed time: 0.95 seconds; current allocated memory: 145.289 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stitchInPhi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stitchInPhi'.
+INFO: [HLS 200-111]  Elapsed time: 0.58 seconds; current allocated memory: 149.532 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'towerMerge_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_in_0_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_in_1_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_in_2_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_in_3_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_in_0_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_in_1_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_in_2_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_in_3_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_in_0_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_in_1_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_in_2_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_in_3_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_out_0_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_out_1_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_out_2_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_out_3_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_out_0_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_out_1_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_out_2_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_out_3_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_out_0_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_out_1_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_out_2_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_out_3_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'towerMerge_top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'towerMerge_top'.
+INFO: [HLS 200-111]  Elapsed time: 1.47 seconds; current allocated memory: 155.664 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:39 ; elapsed = 00:01:00 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 7416 ; free virtual = 66615
+INFO: [VHDL 208-304] Generating VHDL RTL for towerMerge_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for towerMerge_top.
+INFO: [HLS 200-112] Total elapsed time: 60.12 seconds; peak allocated memory: 155.664 MB.

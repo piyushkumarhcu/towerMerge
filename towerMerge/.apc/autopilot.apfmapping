@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="towerMerge_top.cpp" path="/afs/cern.ch/user/p/piyush/work/towerMerge/towerMerge_top.cpp"/>
+    <originFiles name="towerMerge.cpp" path="/afs/cern.ch/user/p/piyush/work/towerMerge/towerMerge.cpp"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>
