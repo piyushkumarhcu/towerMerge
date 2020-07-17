@@ -1,0 +1,78 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4.167ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgc2104-1-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'towerMerge_top.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'towerMerge.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 4750 ; free virtual = 66970
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 4750 ; free virtual = 66970
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'processInputData' into 'towerMerge_top' (towerMerge_top.cpp:66).
+INFO: [XFORM 203-603] Inlining function 'processOutputData' into 'towerMerge_top' (towerMerge_top.cpp:100).
+INFO: [XFORM 203-603] Inlining function 'processOutputData' into 'towerMerge_top' (towerMerge_top.cpp:97).
+INFO: [XFORM 203-603] Inlining function 'processOutputData' into 'towerMerge_top' (towerMerge_top.cpp:88).
+INFO: [XFORM 203-603] Inlining function 'processOutputData' into 'towerMerge_top' (towerMerge_top.cpp:79).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 4737 ; free virtual = 66960
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'Tower::peak_phi' into 'stitchNeighbors' (towerMerge.cpp:8) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::peak_eta' into 'stitchNeighbors' (towerMerge.cpp:8) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::cluster_et' into 'stitchNeighbors' (towerMerge.cpp:11) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::tower_et' into 'stitchNeighbors' (towerMerge.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::peak_time' into 'stitchNeighbors' (towerMerge.cpp:20) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::hOe' into 'stitchNeighbors' (towerMerge.cpp:20) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::operator unsigned int' into 'towerMerge_top' (towerMerge_top.cpp:85) automatically.
+WARNING: [SYNCHK 200-23] ./towerMerge.h:71: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 4729 ; free virtual = 66953
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'towerMerge_top' (towerMerge_top.cpp:56).
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (towerMerge_top.cpp:61) in function 'towerMerge_top' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (./towerMerge.h:65) in function 'towerMerge_top' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'makeTowerloop' (towerMerge_top.cpp:64) in function 'towerMerge_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (./towerMerge.h:67) in function 'towerMerge_top' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.2' (./towerMerge.h:69) in function 'towerMerge_top' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.3' (./towerMerge.h:59) in function 'towerMerge_top' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (towerMerge_top.cpp:69) in function 'towerMerge_top' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1' (./towerMerge.h:65) in function 'towerMerge_top' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'link1OutputLoop' (towerMerge_top.cpp:82) in function 'towerMerge_top' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'link2OutputLoop' (towerMerge_top.cpp:91) in function 'towerMerge_top' completely with a factor of 17.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'link_in.V.data.V' (towerMerge_top.cpp:56) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'link_in.V.user.V' (towerMerge_top.cpp:56) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'link_in.V.last.V' (towerMerge_top.cpp:56) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'link_out.V.data.V' (towerMerge_top.cpp:56) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'link_out.V.user.V' (towerMerge_top.cpp:56) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'link_out.V.last.V' (towerMerge_top.cpp:56) .
+INFO: [XFORM 203-101] Partitioning array 'towersx.tower.data.V' (towerMerge_top.cpp:61) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'this.assign'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'towersy.tower.data.V' (towerMerge_top.cpp:69) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'link_in.V.data.V' (towerMerge_top.cpp:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'link_in.V.user.V' (towerMerge_top.cpp:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'link_in.V.last.V' (towerMerge_top.cpp:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'link_out.V.data.V' (towerMerge_top.cpp:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'link_out.V.user.V' (towerMerge_top.cpp:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'link_out.V.last.V' (towerMerge_top.cpp:56) in dimension 1 completely.
+INFO: [XFORM 203-102] Partitioning array 'towersx.tower.data.V.0' (towerMerge_top.cpp:61) automatically.
+INFO: [XFORM 203-102] Partitioning array 'towersx.tower.data.V.1' (towerMerge_top.cpp:61) automatically.
+INFO: [XFORM 203-102] Partitioning array 'towersy.tower.data.V.0' (towerMerge_top.cpp:69) automatically.
+INFO: [XFORM 203-102] Partitioning array 'towersy.tower.data.V.1' (towerMerge_top.cpp:69) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::peak_phi' into 'stitchNeighbors' (towerMerge.cpp:8) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::peak_eta' into 'stitchNeighbors' (towerMerge.cpp:8) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::cluster_et' into 'stitchNeighbors' (towerMerge.cpp:11) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::tower_et' into 'stitchNeighbors' (towerMerge.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::peak_time' into 'stitchNeighbors' (towerMerge.cpp:20) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::hOe' into 'stitchNeighbors' (towerMerge.cpp:20) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::operator unsigned int' into 'towerMerge_top' (towerMerge_top.cpp:85) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (towerMerge.cpp:5:1) to (towerMerge.cpp:36:1) in function 'stitchNeighbors'... converting 8 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'stitchNeighbors' (towerMerge.cpp:5:1)...7 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 4702 ; free virtual = 66928
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 4688 ; free virtual = 66915
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'towerMerge_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stitchNeighbors' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'stitchNeighbors'.

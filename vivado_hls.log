@@ -1,38 +1,39 @@
 INFO: [HLS 200-10] Running '/data/tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'piyush' on host 'uwlogin.cern.ch' (Linux_x86_64 version 3.10.0-957.12.2.el7.x86_64) on Thu Jul 16 04:53:28 EDT 2020
+INFO: [HLS 200-10] For user 'piyush' on host 'uwlogin.cern.ch' (Linux_x86_64 version 3.10.0-957.12.2.el7.x86_64) on Fri Jul 17 03:56:40 EDT 2020
 INFO: [HLS 200-10] On os "CentOS Linux release 7.8.2003 (Core) "
 INFO: [HLS 200-10] In directory '/afs/cern.ch/user/p/piyush/work/towerMerge'
-Sourcing Tcl script '/afs/cern.ch/user/p/piyush/work/towerMerge/towerMerge/solution1/csynth.tcl'
+Sourcing Tcl script '/afs/cern.ch/user/p/piyush/work/towerMerge/towerMerge/InitiationInterval6/csynth.tcl'
 INFO: [HLS 200-10] Opening project '/afs/cern.ch/user/p/piyush/work/towerMerge/towerMerge'.
-INFO: [HLS 200-10] Adding design file 'towerMerge_top.cpp' to the project
 INFO: [HLS 200-10] Adding design file 'towerMerge.cpp' to the project
-INFO: [HLS 200-10] Opening solution '/afs/cern.ch/user/p/piyush/work/towerMerge/towerMerge/solution1'.
+INFO: [HLS 200-10] Adding design file 'towerMerge_top.cpp' to the project
+INFO: [HLS 200-10] Opening solution '/afs/cern.ch/user/p/piyush/work/towerMerge/towerMerge/InitiationInterval6'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 4.167ns.
 INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
 INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgc2104-1-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4.167ns.
 INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
-INFO: [HLS 200-10] Analyzing design file 'towerMerge.cpp' ... 
 INFO: [HLS 200-10] Analyzing design file 'towerMerge_top.cpp' ... 
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 7506 ; free virtual = 66690
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 7506 ; free virtual = 66690
+INFO: [HLS 200-10] Analyzing design file 'towerMerge.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 4683 ; free virtual = 66963
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 4683 ; free virtual = 66963
 INFO: [HLS 200-10] Starting code transformations ...
 INFO: [XFORM 203-603] Inlining function 'processInputData' into 'towerMerge_top' (towerMerge_top.cpp:66).
 INFO: [XFORM 203-603] Inlining function 'processOutputData' into 'towerMerge_top' (towerMerge_top.cpp:100).
 INFO: [XFORM 203-603] Inlining function 'processOutputData' into 'towerMerge_top' (towerMerge_top.cpp:97).
 INFO: [XFORM 203-603] Inlining function 'processOutputData' into 'towerMerge_top' (towerMerge_top.cpp:88).
 INFO: [XFORM 203-603] Inlining function 'processOutputData' into 'towerMerge_top' (towerMerge_top.cpp:79).
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 7495 ; free virtual = 66681
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 4669 ; free virtual = 66952
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO: [XFORM 203-602] Inlining function 'Tower::peak_phi' into 'stitchNeighbors' (towerMerge.cpp:8) automatically.
 INFO: [XFORM 203-602] Inlining function 'Tower::peak_eta' into 'stitchNeighbors' (towerMerge.cpp:8) automatically.
 INFO: [XFORM 203-602] Inlining function 'Tower::cluster_et' into 'stitchNeighbors' (towerMerge.cpp:11) automatically.
-INFO: [XFORM 203-602] Inlining function 'Tower::tower_et' into 'stitchNeighbors' (towerMerge.cpp:15) automatically.
-INFO: [XFORM 203-602] Inlining function 'Tower::peak_time' into 'stitchNeighbors' (towerMerge.cpp:15) automatically.
-INFO: [XFORM 203-602] Inlining function 'Tower::hOe' into 'stitchNeighbors' (towerMerge.cpp:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::tower_et' into 'stitchNeighbors' (towerMerge.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::peak_time' into 'stitchNeighbors' (towerMerge.cpp:20) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::hOe' into 'stitchNeighbors' (towerMerge.cpp:20) automatically.
 INFO: [XFORM 203-602] Inlining function 'Tower::operator unsigned int' into 'towerMerge_top' (towerMerge_top.cpp:85) automatically.
 WARNING: [SYNCHK 200-23] ./towerMerge.h:71: variable-indexed range selection may cause suboptimal QoR.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 7486 ; free virtual = 66674
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 4661 ; free virtual = 66945
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'towerMerge_top' (towerMerge_top.cpp:56).
 INFO: [HLS 200-489] Unrolling loop 'Loop-1' (towerMerge_top.cpp:61) in function 'towerMerge_top' completely with a factor of 1.
 INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (./towerMerge.h:65) in function 'towerMerge_top' completely with a factor of 16.
@@ -66,14 +67,14 @@ INFO: [XFORM 203-102] Partitioning array 'towersy.tower.data.V.1' (towerMerge_to
 INFO: [XFORM 203-602] Inlining function 'Tower::peak_phi' into 'stitchNeighbors' (towerMerge.cpp:8) automatically.
 INFO: [XFORM 203-602] Inlining function 'Tower::peak_eta' into 'stitchNeighbors' (towerMerge.cpp:8) automatically.
 INFO: [XFORM 203-602] Inlining function 'Tower::cluster_et' into 'stitchNeighbors' (towerMerge.cpp:11) automatically.
-INFO: [XFORM 203-602] Inlining function 'Tower::tower_et' into 'stitchNeighbors' (towerMerge.cpp:15) automatically.
-INFO: [XFORM 203-602] Inlining function 'Tower::peak_time' into 'stitchNeighbors' (towerMerge.cpp:15) automatically.
-INFO: [XFORM 203-602] Inlining function 'Tower::hOe' into 'stitchNeighbors' (towerMerge.cpp:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::tower_et' into 'stitchNeighbors' (towerMerge.cpp:16) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::peak_time' into 'stitchNeighbors' (towerMerge.cpp:20) automatically.
+INFO: [XFORM 203-602] Inlining function 'Tower::hOe' into 'stitchNeighbors' (towerMerge.cpp:20) automatically.
 INFO: [XFORM 203-602] Inlining function 'Tower::operator unsigned int' into 'towerMerge_top' (towerMerge_top.cpp:85) automatically.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (towerMerge.cpp:5:1) to (towerMerge.cpp:37:1) in function 'stitchNeighbors'... converting 13 basic blocks.
-INFO: [XFORM 203-11] Balancing expressions in function 'stitchNeighbors' (towerMerge.cpp:5:1)...6 expression(s) balanced.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 7459 ; free virtual = 66648
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:35 ; elapsed = 00:00:45 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 7448 ; free virtual = 66637
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (towerMerge.cpp:5:1) to (towerMerge.cpp:36:1) in function 'stitchNeighbors'... converting 8 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'stitchNeighbors' (towerMerge.cpp:5:1)...7 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 4634 ; free virtual = 66920
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 4621 ; free virtual = 66907
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'towerMerge_top' ...
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -81,53 +82,53 @@ INFO: [HLS 200-42] -- Implementing module 'stitchNeighbors'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'stitchNeighbors'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining result : Target II = 6, Final II = 1, Depth = 1.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 45.31 seconds; current allocated memory: 142.175 MB.
+INFO: [HLS 200-111]  Elapsed time: 37.45 seconds; current allocated memory: 144.347 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 142.398 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 144.596 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'stitchInPhi' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'stitchInPhi'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining result : Target II = 6, Final II = 6, Depth = 6.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.5 seconds; current allocated memory: 142.760 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 144.974 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.66 seconds; current allocated memory: 143.227 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 145.375 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'towerMerge_top' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'towerMerge_top'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining result : Target II = 6, Final II = 6, Depth = 7.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.16 seconds; current allocated memory: 143.921 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 145.787 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.6 seconds; current allocated memory: 144.534 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 146.547 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'stitchNeighbors' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'stitchNeighbors'.
-INFO: [HLS 200-111]  Elapsed time: 0.95 seconds; current allocated memory: 145.289 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 147.020 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'stitchInPhi' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'stitchInPhi'.
-INFO: [HLS 200-111]  Elapsed time: 0.58 seconds; current allocated memory: 149.532 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.52 seconds; current allocated memory: 151.238 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'towerMerge_top' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -157,8 +158,8 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_out_2_
 INFO: [RTGEN 206-500] Setting interface mode on port 'towerMerge_top/link_out_3_V_last_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on function 'towerMerge_top' to 'ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'towerMerge_top'.
-INFO: [HLS 200-111]  Elapsed time: 1.47 seconds; current allocated memory: 155.664 MB.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:39 ; elapsed = 00:01:00 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 7416 ; free virtual = 66615
+INFO: [HLS 200-111]  Elapsed time: 0.88 seconds; current allocated memory: 157.330 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:36 ; elapsed = 00:00:48 . Memory (MB): peak = 980.750 ; gain = 192.211 ; free physical = 4593 ; free virtual = 66883
 INFO: [VHDL 208-304] Generating VHDL RTL for towerMerge_top.
 INFO: [VLOG 209-307] Generating Verilog RTL for towerMerge_top.
-INFO: [HLS 200-112] Total elapsed time: 60.12 seconds; peak allocated memory: 155.664 MB.
+INFO: [HLS 200-112] Total elapsed time: 48.24 seconds; peak allocated memory: 157.330 MB.

@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1594972642000">
+  <ports id="1" name="link_in_0_V_data_V" type="PortType" originalName="link_in[0].V.data.V" bitwidth="576">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="link_in_1_V_data_V" type="PortType" originalName="link_in[1].V.data.V" bitwidth="576">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="link_in_2_V_data_V" type="PortType" originalName="link_in[2].V.data.V" bitwidth="576">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="link_in_3_V_data_V" type="PortType" originalName="link_in[3].V.data.V" bitwidth="576">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="link_in_0_V_user_V" type="PortType" originalName="link_in[0].V.user.V" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="link_in_1_V_user_V" type="PortType" originalName="link_in[1].V.user.V" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="link_in_2_V_user_V" type="PortType" originalName="link_in[2].V.user.V" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="8" name="link_in_3_V_user_V" type="PortType" originalName="link_in[3].V.user.V" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="9" name="link_in_0_V_last_V" type="PortType" originalName="link_in[0].V.last.V" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="10" name="link_in_1_V_last_V" type="PortType" originalName="link_in[1].V.last.V" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="11" name="link_in_2_V_last_V" type="PortType" originalName="link_in[2].V.last.V" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="12" name="link_in_3_V_last_V" type="PortType" originalName="link_in[3].V.last.V" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="13" name="link_out_0_V_data_V" type="PortType" originalName="link_out[0].V.data.V" bitwidth="576" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="14" name="link_out_1_V_data_V" type="PortType" originalName="link_out[1].V.data.V" bitwidth="576" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="15" name="link_out_2_V_data_V" type="PortType" originalName="link_out[2].V.data.V" bitwidth="576" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="16" name="link_out_3_V_data_V" type="PortType" originalName="link_out[3].V.data.V" bitwidth="576" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="17" name="link_out_0_V_user_V" type="PortType" originalName="link_out[0].V.user.V" bitwidth="8" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="18" name="link_out_1_V_user_V" type="PortType" originalName="link_out[1].V.user.V" bitwidth="8" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="19" name="link_out_2_V_user_V" type="PortType" originalName="link_out[2].V.user.V" bitwidth="8" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="20" name="link_out_3_V_user_V" type="PortType" originalName="link_out[3].V.user.V" bitwidth="8" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="21" name="link_out_0_V_last_V" type="PortType" originalName="link_out[0].V.last.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="22" name="link_out_1_V_last_V" type="PortType" originalName="link_out[1].V.last.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="23" name="link_out_2_V_last_V" type="PortType" originalName="link_out[2].V.last.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="24" name="link_out_3_V_last_V" type="PortType" originalName="link_out[3].V.last.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="148" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="149" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="150" source_obj="//@ports.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="251" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="252" source_obj="//@ports.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="253" source_obj="//@ports.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="391" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="392" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="393" source_obj="//@ports.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="397" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@ports.12"/>
+  <edges id="398" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@ports.16"/>
+  <edges id="399" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@ports.20"/>
+  <edges id="432" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@ports.13"/>
+  <edges id="433" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@ports.17"/>
+  <edges id="434" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@ports.21"/>
+  <edges id="435" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="462" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@ports.14"/>
+  <edges id="463" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@ports.18"/>
+  <edges id="464" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@ports.22"/>
+  <edges id="465" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="469" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="470" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="471" source_obj="//@ports.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="474" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@ports.15"/>
+  <edges id="475" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@ports.19"/>
+  <edges id="476" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@ports.23"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <regions anchor_node="-1" region_type="8" interval="6" typeName="Pipeline" id="542" pipe_depth="7" RegionName="towerMerge_top">
+    <basic_blocks id="145" name="towerMerge_top" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="empty" lineNumber="28" fileName="towerMerge_top.cpp" fileDirectory=".." contextFuncName="processInputData" bitwidth="585" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="towerMerge_top.cpp" linenumber="28" fileDirectory="/afs/cern.ch/user/p/piyush/work/towerMerge" functionName="processInputData"/>
+        <inlineStackInfo fileName="towerMerge_top.cpp" linenumber="66" fileDirectory="/afs/cern.ch/user/p/piyush/work/towerMerge" functionName="towerMerge_top"/>
+        <dataInputObjs>link_in_1_V_data_V</dataInputObjs>
+        <dataInputObjs>link_in_1_V_user_V</dataInputObjs>
+        <dataInputObjs>link_in_1_V_last_V</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="empty_9" lineNumber="28" fileName="towerMerge_top.cpp" fileDirectory=".." contextFuncName="processInputData" bitwidth="585" opcode="read" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="towerMerge_top.cpp" linenumber="28" fileDirectory="/afs/cern.ch/user/p/piyush/work/towerMerge" functionName="processInputData"/>
+        <inlineStackInfo fileName="towerMerge_top.cpp" linenumber="66" fileDirectory="/afs/cern.ch/user/p/piyush/work/towerMerge" functionName="towerMerge_top"/>
+        <dataInputObjs>link_in_2_V_data_V</dataInputObjs>
+        <dataInputObjs>link_in_2_V_user_V</dataInputObjs>
+        <dataInputObjs>link_in_2_V_last_V</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="call_ret" lineNumber="72" fileName="towerMerge_top.cpp" fileDirectory=".." rtlName="grp_stitchInPhi_fu_250" contextFuncName="towerMerge_top" bitwidth="1088" opcode="call" nodeLatency="5" m_display="0" m_delay="1.68" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="towerMerge_top.cpp" linenumber="72" fileDirectory="/afs/cern.ch/user/p/piyush/work/towerMerge" functionName="towerMerge_top"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <constName>stitchInPhi</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="132" name="empty_10" lineNumber="78" fileName="towerMerge_top.cpp" fileDirectory=".." contextFuncName="towerMerge_top" bitwidth="585" opcode="read" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="towerMerge_top.cpp" linenumber="78" fileDirectory="/afs/cern.ch/user/p/piyush/work/towerMerge" functionName="towerMerge_top"/>
+        <dataInputObjs>link_in_0_V_data_V</dataInputObjs>
+        <dataInputObjs>link_in_0_V_user_V</dataInputObjs>
+        <dataInputObjs>link_in_0_V_last_V</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+        <dataOutputObjs>partset</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="134" name="link_out_0_V_data_V_write_ln17" lineNumber="17" fileName="towerMerge_top.cpp" fileDirectory=".." contextFuncName="processOutputData" opcode="write" nodeLabel="5.0" nodeLatency="1" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="towerMerge_top.cpp" linenumber="17" fileDirectory="/afs/cern.ch/user/p/piyush/work/towerMerge" functionName="processOutputData"/>
+        <inlineStackInfo fileName="towerMerge_top.cpp" linenumber="79" fileDirectory="/afs/cern.ch/user/p/piyush/work/towerMerge" functionName="towerMerge_top"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>link_out_0_V_data_V</dataOutputObjs>
+        <dataOutputObjs>link_out_0_V_user_V</dataOutputObjs>
+        <dataOutputObjs>link_out_0_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="136" name="tmp_data_V_4" lineNumber="85" originalName="tmp.data.V" fileName="towerMerge_top.cpp" fileDirectory=".." rtlName="tmp_data_V_4_fu_840_p5" contextFuncName="towerMerge_top" bitwidth="576" opcode="partset" nodeLabel="5.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="towerMerge_top.cpp" linenumber="85" fileDirectory="/afs/cern.ch/user/p/piyush/work/towerMerge" functionName="towerMerge_top"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="137" name="link_out_1_V_data_V_write_ln17" lineNumber="17" fileName="towerMerge_top.cpp" fileDirectory=".." contextFuncName="processOutputData" opcode="write" nodeLabel="5.0" nodeLatency="1" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="towerMerge_top.cpp" linenumber="17" fileDirectory="/afs/cern.ch/user/p/piyush/work/towerMerge" functionName="processOutputData"/>
+        <inlineStackInfo fileName="towerMerge_top.cpp" linenumber="88" fileDirectory="/afs/cern.ch/user/p/piyush/work/towerMerge" functionName="towerMerge_top"/>
+        <dataInputObjs>partset</dataInputObjs>
+        <dataOutputObjs>link_out_1_V_data_V</dataOutputObjs>
+        <dataOutputObjs>link_out_1_V_user_V</dataOutputObjs>
+        <dataOutputObjs>link_out_1_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="139" name="tmp_data_V_5" lineNumber="94" originalName="tmp.data.V" fileName="towerMerge_top.cpp" fileDirectory=".." rtlName="tmp_data_V_5_fu_890_p5" contextFuncName="towerMerge_top" bitwidth="576" opcode="partset" nodeLabel="5.0" m_display="0" m_topoIndex="83" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="towerMerge_top.cpp" linenumber="94" fileDirectory="/afs/cern.ch/user/p/piyush/work/towerMerge" functionName="towerMerge_top"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="140" name="link_out_2_V_data_V_write_ln17" lineNumber="17" fileName="towerMerge_top.cpp" fileDirectory=".." contextFuncName="processOutputData" opcode="write" nodeLabel="5.0" nodeLatency="1" m_display="0" m_topoIndex="84" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="towerMerge_top.cpp" linenumber="17" fileDirectory="/afs/cern.ch/user/p/piyush/work/towerMerge" functionName="processOutputData"/>
+        <inlineStackInfo fileName="towerMerge_top.cpp" linenumber="97" fileDirectory="/afs/cern.ch/user/p/piyush/work/towerMerge" functionName="towerMerge_top"/>
+        <dataInputObjs>partset</dataInputObjs>
+        <dataOutputObjs>link_out_2_V_data_V</dataOutputObjs>
+        <dataOutputObjs>link_out_2_V_user_V</dataOutputObjs>
+        <dataOutputObjs>link_out_2_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="141" name="empty_11" lineNumber="99" fileName="towerMerge_top.cpp" fileDirectory=".." contextFuncName="towerMerge_top" bitwidth="585" opcode="read" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="towerMerge_top.cpp" linenumber="99" fileDirectory="/afs/cern.ch/user/p/piyush/work/towerMerge" functionName="towerMerge_top"/>
+        <dataInputObjs>link_in_3_V_data_V</dataInputObjs>
+        <dataInputObjs>link_in_3_V_user_V</dataInputObjs>
+        <dataInputObjs>link_in_3_V_last_V</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="143" name="link_out_3_V_data_V_write_ln17" lineNumber="17" fileName="towerMerge_top.cpp" fileDirectory=".." contextFuncName="processOutputData" opcode="write" nodeLabel="5.0" nodeLatency="1" m_display="0" m_topoIndex="85" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="towerMerge_top.cpp" linenumber="17" fileDirectory="/afs/cern.ch/user/p/piyush/work/towerMerge" functionName="processOutputData"/>
+        <inlineStackInfo fileName="towerMerge_top.cpp" linenumber="100" fileDirectory="/afs/cern.ch/user/p/piyush/work/towerMerge" functionName="towerMerge_top"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>link_out_3_V_data_V</dataOutputObjs>
+        <dataOutputObjs>link_out_3_V_user_V</dataOutputObjs>
+        <dataOutputObjs>link_out_3_V_last_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="144" name="_ln102" lineNumber="102" fileName="towerMerge_top.cpp" fileDirectory=".." contextFuncName="towerMerge_top" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="towerMerge_top.cpp" linenumber="102" fileDirectory="/afs/cern.ch/user/p/piyush/work/towerMerge" functionName="towerMerge_top"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="towerMerge_top.cpp">
+        <validLinenumbers>28</validLinenumbers>
+        <validLinenumbers>72</validLinenumbers>
+        <validLinenumbers>78</validLinenumbers>
+        <validLinenumbers>17</validLinenumbers>
+        <validLinenumbers>85</validLinenumbers>
+        <validLinenumbers>94</validLinenumbers>
+        <validLinenumbers>99</validLinenumbers>
+        <validLinenumbers>102</validLinenumbers>
+        <validLinenumbers>66</validLinenumbers>
+        <validLinenumbers>79</validLinenumbers>
+        <validLinenumbers>88</validLinenumbers>
+        <validLinenumbers>97</validLinenumbers>
+        <validLinenumbers>100</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <regnodes realName="tmp_data_V_5_reg_1059">
+    <nodeIds>139</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_1_tower_14_reg_1027">
+    <nodeIds>94</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_0_tower_14_reg_957">
+    <nodeIds>75</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_0_tower_6_s_reg_917">
+    <nodeIds>67</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_data_V_7_reg_1049">
+    <nodeIds>142</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_0_tower_13_reg_952">
+    <nodeIds>74</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_0_tower_7_s_reg_922">
+    <nodeIds>68</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_1_tower_15_reg_1032">
+    <nodeIds>95</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_1_tower_5_s_reg_982">
+    <nodeIds>85</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_1_tower_6_s_reg_987">
+    <nodeIds>86</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_1_tower_16_reg_1037">
+    <nodeIds>96</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_0_tower_4_s_reg_907">
+    <nodeIds>65</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_data_V_3_reg_1042">
+    <nodeIds>133</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_0_tower_11_reg_942">
+    <nodeIds>72</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_0_tower_5_s_reg_912">
+    <nodeIds>66</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_1_tower_9_s_reg_1002">
+    <nodeIds>89</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_1_tower_7_s_reg_992">
+    <nodeIds>87</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_1_tower_4_s_reg_977">
+    <nodeIds>84</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_data_V_4_reg_1054">
+    <nodeIds>136</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_1_tower_11_reg_1012">
+    <nodeIds>91</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_0_tower_12_reg_947">
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_0_tower_9_s_reg_932">
+    <nodeIds>70</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_0_tower_15_reg_962">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_1_tower_10_reg_1007">
+    <nodeIds>90</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_0_tower_16_reg_967">
+    <nodeIds>77</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_0_tower_10_reg_937">
+    <nodeIds>71</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_1_tower_12_reg_1017">
+    <nodeIds>92</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_1_tower_13_reg_1022">
+    <nodeIds>93</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_0_tower_8_s_reg_927">
+    <nodeIds>69</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_0_tower_3_s_reg_902">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_1_tower_3_s_reg_972">
+    <nodeIds>83</nodeIds>
+  </regnodes>
+  <regnodes realName="towersx_1_tower_8_s_reg_997">
+    <nodeIds>88</nodeIds>
+  </regnodes>
+  <expressionNodes realName="towersy_0_tower_12_fu_714">
+    <nodeIds>110</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_0_tower_8_s_fu_374">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_1_tower_4_s_fu_515">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_0_tower_11_fu_710">
+    <nodeIds>109</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_0_tower_13_fu_718">
+    <nodeIds>111</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_0_tower_2_s_fu_674">
+    <nodeIds>100</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_1_tower_13_fu_614">
+    <nodeIds>93</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_1_tower_1_s_fu_738">
+    <nodeIds>116</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_0_tower_7_s_fu_363">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_1_tower_2_s_fu_493">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_0_tower_14_fu_440">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_V_1_fu_473">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_1_tower_5_s_fu_754">
+    <nodeIds>120</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_1_tower_3_s_fu_504">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_0_tower_11_fu_407">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_0_tower_9_s_fu_385">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_1_tower_12_fu_603">
+    <nodeIds>92</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_0_tower_5_s_fu_341">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_1_tower_0_s_fu_734">
+    <nodeIds>115</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_V_5_fu_890">
+    <nodeIds>139</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_0_tower_1_s_fu_670">
+    <nodeIds>99</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_1_tower_7_s_fu_548">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_0_tower_15_fu_726">
+    <nodeIds>113</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_0_tower_10_fu_706">
+    <nodeIds>108</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_0_tower_4_s_fu_330">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_1_tower_10_fu_774">
+    <nodeIds>125</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_1_tower_8_s_fu_559">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_0_tower_6_s_fu_352">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_0_tower_0_s_fu_666">
+    <nodeIds>98</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_1_tower_2_s_fu_742">
+    <nodeIds>117</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_1_tower_5_s_fu_526">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_1_tower_16_fu_647">
+    <nodeIds>96</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_1_tower_6_s_fu_537">
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_0_tower_12_fu_418">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_0_tower_8_s_fu_698">
+    <nodeIds>106</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_852">
+    <nodeIds>138</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_1_tower_3_s_fu_746">
+    <nodeIds>118</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_1_tower_14_fu_790">
+    <nodeIds>129</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_0_tower_9_s_fu_702">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_1_tower_15_fu_794">
+    <nodeIds>130</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_0_tower_16_fu_462">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_0_tower_4_s_fu_682">
+    <nodeIds>102</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_0_tower_0_s_fu_292">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_1_tower_16_fu_798">
+    <nodeIds>131</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_1_tower_13_fu_786">
+    <nodeIds>128</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_0_tower_16_fu_730">
+    <nodeIds>114</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_1_tower_8_s_fu_766">
+    <nodeIds>123</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_V_3_fu_658">
+    <nodeIds>133</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_1_tower_4_s_fu_750">
+    <nodeIds>119</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_1_tower_12_fu_782">
+    <nodeIds>127</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_0_tower_13_fu_429">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_1_tower_15_fu_636">
+    <nodeIds>95</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_1_tower_11_fu_592">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_V_fu_288">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_1_tower_9_s_fu_570">
+    <nodeIds>89</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_0_tower_3_s_fu_319">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_1_tower_14_fu_625">
+    <nodeIds>94</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_1_tower_0_s_fu_477">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_0_tower_15_fu_451">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_0_tower_2_s_fu_308">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_0_tower_3_s_fu_678">
+    <nodeIds>101</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_0_tower_10_fu_396">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_0_tower_7_s_fu_694">
+    <nodeIds>105</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_1_tower_11_fu_778">
+    <nodeIds>126</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_1_tower_9_s_fu_770">
+    <nodeIds>124</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_1_tower_1_s_fu_482">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_1_tower_10_fu_581">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_0_tower_14_fu_722">
+    <nodeIds>112</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersx_0_tower_1_s_fu_297">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_802">
+    <nodeIds>135</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_V_4_fu_840">
+    <nodeIds>136</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_V_7_fu_662">
+    <nodeIds>142</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_0_tower_6_s_fu_690">
+    <nodeIds>104</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_1_tower_7_s_fu_762">
+    <nodeIds>122</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_0_tower_5_s_fu_686">
+    <nodeIds>103</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="towersy_1_tower_6_s_fu_758">
+    <nodeIds>121</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_stitchInPhi_fu_250">
+    <nodeIds>97</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="grp_write_fu_235">
+    <nodeIds>143</nodeIds>
+  </ioNodes>
+  <ioNodes realName="empty_11_read_fu_180">
+    <nodeIds>141</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_220">
+    <nodeIds>140</nodeIds>
+  </ioNodes>
+  <ioNodes realName="empty_9_read_fu_160">
+    <nodeIds>78</nodeIds>
+  </ioNodes>
+  <ioNodes realName="empty_10_read_fu_170">
+    <nodeIds>132</nodeIds>
+  </ioNodes>
+  <ioNodes realName="empty_read_fu_150">
+    <nodeIds>59</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_205">
+    <nodeIds>137</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_190">
+    <nodeIds>134</nodeIds>
+  </ioNodes>
+  <ioPorts name="link_in_0_V_data_V">
+    <contents name="read">
+      <nodeIds>132</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_in_0_V_last_V">
+    <contents name="read">
+      <nodeIds>132</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_in_0_V_user_V">
+    <contents name="read">
+      <nodeIds>132</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_in_1_V_data_V">
+    <contents name="read">
+      <nodeIds>59</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_in_1_V_last_V">
+    <contents name="read">
+      <nodeIds>59</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_in_1_V_user_V">
+    <contents name="read">
+      <nodeIds>59</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_in_2_V_data_V">
+    <contents name="read">
+      <nodeIds>78</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_in_2_V_last_V">
+    <contents name="read">
+      <nodeIds>78</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_in_2_V_user_V">
+    <contents name="read">
+      <nodeIds>78</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_in_3_V_data_V">
+    <contents name="read">
+      <nodeIds>141</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_in_3_V_last_V">
+    <contents name="read">
+      <nodeIds>141</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_in_3_V_user_V">
+    <contents name="read">
+      <nodeIds>141</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_out_0_V_data_V">
+    <contents name="write">
+      <nodeIds>134</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_out_0_V_last_V">
+    <contents name="write">
+      <nodeIds>134</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_out_0_V_user_V">
+    <contents name="write">
+      <nodeIds>134</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_out_1_V_data_V">
+    <contents name="write">
+      <nodeIds>137</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_out_1_V_last_V">
+    <contents name="write">
+      <nodeIds>137</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_out_1_V_user_V">
+    <contents name="write">
+      <nodeIds>137</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_out_2_V_data_V">
+    <contents name="write">
+      <nodeIds>140</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_out_2_V_last_V">
+    <contents name="write">
+      <nodeIds>140</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_out_2_V_user_V">
+    <contents name="write">
+      <nodeIds>140</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_out_3_V_data_V">
+    <contents name="write">
+      <nodeIds>143</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_out_3_V_last_V">
+    <contents name="write">
+      <nodeIds>143</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="link_out_3_V_user_V">
+    <contents name="write">
+      <nodeIds>143</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="6" latency="6"/>
+      <operations id="132" stage="1" latency="1"/>
+      <operations id="133" stage="1" latency="1"/>
+      <operations id="141" stage="1" latency="1"/>
+      <operations id="142" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="97" stage="5" latency="6"/>
+    </states>
+    <states id="3">
+      <operations id="97" stage="4" latency="6"/>
+    </states>
+    <states id="4">
+      <operations id="97" stage="3" latency="6"/>
+    </states>
+    <states id="5">
+      <operations id="97" stage="2" latency="6"/>
+    </states>
+    <states id="6">
+      <operations id="97" stage="1" latency="6"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="115" stage="1" latency="1"/>
+      <operations id="116" stage="1" latency="1"/>
+      <operations id="117" stage="1" latency="1"/>
+      <operations id="118" stage="1" latency="1"/>
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="120" stage="1" latency="1"/>
+      <operations id="121" stage="1" latency="1"/>
+      <operations id="122" stage="1" latency="1"/>
+      <operations id="123" stage="1" latency="1"/>
+      <operations id="124" stage="1" latency="1"/>
+      <operations id="125" stage="1" latency="1"/>
+      <operations id="126" stage="1" latency="1"/>
+      <operations id="127" stage="1" latency="1"/>
+      <operations id="128" stage="1" latency="1"/>
+      <operations id="129" stage="1" latency="1"/>
+      <operations id="130" stage="1" latency="1"/>
+      <operations id="131" stage="1" latency="1"/>
+      <operations id="134" stage="2" latency="2"/>
+      <operations id="135" stage="1" latency="1"/>
+      <operations id="136" stage="1" latency="1"/>
+      <operations id="137" stage="2" latency="2"/>
+      <operations id="138" stage="1" latency="1"/>
+      <operations id="139" stage="1" latency="1"/>
+      <operations id="140" stage="2" latency="2"/>
+      <operations id="143" stage="2" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="134" stage="1" latency="2"/>
+      <operations id="137" stage="1" latency="2"/>
+      <operations id="140" stage="1" latency="2"/>
+      <operations id="143" stage="1" latency="2"/>
+      <operations id="144" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="towerMerge_top" mII="6" mDepth="7" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="6" mMaxLatency="6">
+      <basicBlocks>145</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

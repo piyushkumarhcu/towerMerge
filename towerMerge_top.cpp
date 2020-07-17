@@ -8,7 +8,7 @@ using namespace algo;
 
 void processOutputData(hls::stream<axiword> &link, ap_uint<576> bigdataword) {
 #pragma HLS INTERFACE axis port=link
-#pragma HLS PIPELINE
+#pragma HLS PIPELINE II=6
 #pragma HLS INLINE
   algo::axiword r;
   r.user = 0;
@@ -19,7 +19,7 @@ void processOutputData(hls::stream<axiword> &link, ap_uint<576> bigdataword) {
 
 void processInputData(hls::stream<axiword> &link, TowerUnite &tower) {
 #pragma HLS INTERFACE axis port=link
-#pragma HLS PIPELINE
+#pragma HLS PIPELINE II=6
 #pragma HLS INLINE
 #ifndef __SYNTHESIS__
   // Avoid simulation warnings
@@ -33,7 +33,7 @@ void processInputData(hls::stream<axiword> &link, TowerUnite &tower) {
 void stitchInPhi(TowerUnite towersx[2], TowerUnite towersy[2]){
 #pragma HLS ARRAY_PARTITION variable=towersx
 #pragma HLS ARRAY_PARTITION variable=towersy
-#pragma HLS PIPELINE
+#pragma HLS PIPELINE II=6
   stitchNeighbors(towersx[0].tower[0], towersx[1].tower[0], towersy[0].tower[0], towersy[1].tower[0]);
   stitchNeighbors(towersx[0].tower[1], towersx[1].tower[1], towersy[0].tower[1], towersy[1].tower[1]);
   stitchNeighbors(towersx[0].tower[2], towersx[1].tower[2], towersy[0].tower[2], towersy[1].tower[2]);
@@ -56,7 +56,7 @@ void stitchInPhi(TowerUnite towersx[2], TowerUnite towersy[2]){
 void towerMerge_top(hls::stream<axiword> link_in[N_INPUT_LINKS], hls::stream<axiword> link_out[N_OUTPUT_LINKS]){
 #pragma HLS INTERFACE axis port=link_in
 #pragma HLS INTERFACE axis port=link_out
-#pragma HLS PIPELINE
+#pragma HLS PIPELINE II=6
 
 TowerUnite towersx[2];
 #pragma HLS ARRAY_PARTITION variable=towersx
